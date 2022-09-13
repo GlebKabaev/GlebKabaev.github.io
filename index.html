@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<!-- комментарий в HTML -->
+
+<!-- в первой строке мы сообщаем браузеру,
+  что это документ HTML5 -->
+
+<html lang="ru">
+
+  <head>
+    <title>Название страницы</title>
+  </head>
+
+  <body>
+
+      <h1>
+         Ссылки
+      </h1>
+
+      <p>
+          Автор <em>Кабаев Глеб</em>.
+          
+      </p>
+
+      <img src="image.jpg" alt="Цветок" style="width: 600px;" />
+
+      
+      
+
+
+
+      <h2>Нумерованный список</h2>
+
+      <ol>
+          <li><a href=http://example.com />компания</a></li>
+          <li><a href=https://example.com />httpsкомпания</a></li>
+          <li><a href=https://paul.kinlan.me/scroll-to-text-bookmarklet/#:~:text =Find%20in%20page>фрагмент</a></li>
+          <li><a href=ftp://user:pass123@tavalik.ru/Temp/file.txt>ftpссылка</a></li>
+          <li><a href=ftp://:@tavalik.ru/Temp/file.txt>без авторизации ссылка</a></li>
+          <li> <a href="#checkbox">ссылка на чекбокс </a></li>
+          <li> <a href="http://example.ru" rel="nofollow">ссылка без перехода</a></li>
+          <li> <!--noindex--><a href="http://example.ru">noindex</a><!--/noindex--></li>
+          <li>Быстрая оттепель — долгий мороз. <a href=https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D1%82%D0%BE />зимой</a> сухо и холодно — летом сухо и жарко. </li>
+          <li><a href=https://www.youtube.com/watch?v=dQw4w9WgXcQ><img src="panda.png" alt="Панда"></a></li>
+          <li><a href="1.pdf">относительная ссылка</a></li>
+        <li><a href="">с пустым href</a></li>
+        <li><a href="/">Сокр на главную</a></li>
+        <li><a href="/about">Сокр на внутреннюю</a></li>
+        <li><a href="../../1.html">на страницу в каталоге двумя уровнями выше текущего</a></li>
+        <li><a href="../1.html">на страницу в каталоге уровнем выше текущего</a></li>
+        <li><a href="1.html">на страницу в текущем каталоге</a></li>
+        <li><a href="about/1.html">на страницу в каталоге about</a></li>
+
+      </ol>
+
+      <h2>Таблица</h2>
+
+     
+      <h1>О себе</h1>
+
+      <form action="/"
+            method="POST">
+
+          <label>
+              Имя<br />
+              <input name="field-name-1"
+                     value="Иванов Иван Иванович" />
+          </label><br />
+
+          <label>
+              email:<br />
+              <input name="field-email"
+                     type="email"
+                     placeholder="Введите вашу почту" />
+          </label><br />
+
+          <label>
+              Дата рождения:<br />
+              <input name="field-date"
+                     value="2019-08-13"
+                     type="date" />
+          </label><br />
+
+          <label>
+              Биография:<br />
+              <textarea name="field-name-2">Меня зовут... мне X лет...</textarea>
+          </label><br />
+
+          <label>
+              Список (combobox):<br />
+              <select name="field-name-3">
+                  <option value="Значение1">Метка1</option>
+                  <option value="Значение2" selected="selected">Метка2</option>
+                  <option value="Значение3">Метка3</option>
+              </select>
+          </label><br />
+
+          <label>
+              Сверхспособности:
+              <br />
+              <select name="field-name-4[]"
+                      multiple="multiple">
+                  <option value="Значение1">Нет</option>
+                  <option value="Значение2" selected="selected">бессмертие</option>
+                  <option value="Значение3" selected="selected"> прохождение сквозь стены</option>
+                  <option value="Значение4" selected="selected">левитация</option>
+              </select>
+          </label><br />
+
+          Пол:<br />
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-1" value="Значение1" />
+              М
+          </label>
+          <label>
+              <input type="radio"
+                     name="radio-group-1" value="Значение2" />
+              Ж
+          </label><br />
+
+          Количество конечностей:<br />
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-1" value="Значение1" />
+              1
+          </label>
+          <label>
+              <input type="radio"
+                     name="radio-group-1" value="Значение2" />
+              2
+          </label>
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-1" value="Значение3" />
+              3
+          </label>
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-1" value="Значение4" />
+              4
+          </label>
+          <label>
+              <input type="radio" checked="checked"
+                     name="radio-group-1" value="Значение5" />
+              5
+          </label><br />
+
+
+          С контрактом ознакомлен:<bi />
+          <label id="checkbox">
+              <input type="checkbox" chaked="chaked"
+                     name="check-1" />Подпись
+          </label><br />
+
+
+          <input type="submit" value="Отправить" />
+      </form>
+
+  </body>
+
+</html>
+ 
