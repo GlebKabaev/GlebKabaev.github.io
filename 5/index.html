@@ -1,0 +1,31 @@
+<script>
+function onClick() {
+  alert("Недопустимое значение");
+}
+    function click1() {
+        
+    let f1 = document.getElementsByName("field1");
+    let f2 = document.getElementsByName("field2");
+    let r = document.getElementById("result");
+    if (f1[0].value < 0 || f2[0].value<0 ||isNaN( f1[0].value)==true || isNaN (f2[0].value)==true) {
+    return onClick();
+    } else {
+    r.innerHTML = f1[0].value * f2[0].value;
+    }
+    return false;
+    
+    }
+    
+    </script>
+    
+    <div id="result"></div>
+    <form>
+        <div>количество товара</div>
+    
+    <input name="field1" type="text">
+    </br>
+    <div>цена</div>
+    <input name="field2" type="text">
+    <button id="button1" onclick="return click1();">Кнопка подсчета</button>
+    
+    </form>
