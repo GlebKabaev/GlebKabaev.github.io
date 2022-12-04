@@ -1,0 +1,207 @@
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 23px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.box {
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.header-title, .hyperlinks_title, .table_title, .forma_title {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 23px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Хедр */
+
+.header {
+  background-color: rgb(9, 54, 116);
+  width: 100%;
+}
+
+.header_inner {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.imgLogo {
+  margin-left: 10px;
+  margin-right: 20px;
+  width: 20%;
+  height: 20%;
+}
+
+/* Навигация */
+
+.menu {
+  margin-top: 20px;
+  background-color: rgb(17, 121, 124);
+  max-width: 800px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.menu_list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  padding: 10px;
+}
+
+.menu_item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu_link {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Ссылки */
+
+.hyperlinks {
+  order: 1;
+  margin-top: 20px;
+}
+
+.hyperlinks_inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+  background-color: rgb(17, 121, 124);
+}
+
+.hyperlinks_list {
+  padding: 10px 0;
+  margin: 0;
+}
+
+.hyperlinks_item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.hyperlinks_link {
+  color: #000;
+  text-decoration: none;
+}
+
+.hyperlinks_image {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+/* Стили таблицы */
+
+.table {
+  order: 2;
+}
+
+.table_inner {
+  text-decoration: none;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.table_title {
+  display: flex;
+  justify-content: center;
+}
+
+.table_tr:nth-child(even) {
+  background-color: rgb(17, 121, 124);
+}
+
+.table_td {
+  padding: 10px 2px;
+  font-size: 18px;
+  text-align: center;
+  color: #000000;
+  line-height: 13px;
+  border: 1px solid #000000;
+}
+
+/* Форма */
+
+.forma {
+  order: 3;
+  margin-top: 20px;
+}
+
+.forma_inner {
+  max-width: 800px;
+  padding-left: 25px;
+  margin: 0 auto;
+  background-color: rgb(17, 121, 124);
+}
+
+.forma_form {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+.forma_input {
+  width: 200px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.forma_btn {
+  margin-bottom: 10px;
+  margin-right: 40px;
+}
+
+.form_text {
+  margin-bottom: 10px;
+}
+
+.form_area {
+  width: 300px;
+  height: 150px;
+  resize: none;
+}
+
+/* Футер */
+
+.footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  background-color: rgb(17, 121, 124);
+}
+
+.footer_copy {
+  padding: 40px 0 40px;
+}
