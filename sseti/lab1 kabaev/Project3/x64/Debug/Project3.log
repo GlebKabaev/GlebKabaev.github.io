@@ -1,0 +1,4 @@
+﻿  client.cpp
+C:\Users\Cringe\Desktop\лаба2\Project3\Project3\client.cpp(25,32): warning C4244: =: преобразование "std::streamoff" в "long", возможна потеря данных
+C:\Users\Cringe\Desktop\лаба2\Project3\Project3\client.cpp(45,36): warning C4244: =: преобразование "std::streamoff" в "long", возможна потеря данных
+  Project3.vcxproj -> C:\Users\Cringe\Desktop\лаба2\Project3\x64\Debug\Project3.exe
