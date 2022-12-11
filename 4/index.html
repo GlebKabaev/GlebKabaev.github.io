@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>4 задание</title>
+  </head>
+  <body>
+    <div class="container-fluid p-0 d-flex flex-column">
+      <header class="header bg-info w-100">
+        <div class="container-md">
+          <div class="header_inner d-flex align-items-center py-3">
+            <img class="logo_img" src="logo.jpg" alt="logo" style="width:150px;height:150px"/>
+            <h1 class="header_title px-4">Название</h1>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="row">
+          <div class="col-md"></div>
+          <div class="col-md-7 bg-info mt-4 d-flex justify-content-center">
+            <div class="menu_list list-unstyled">
+			  <a class="menu_link m-2 fs-3 text-dark text-decoration-none" href="#hyperlinks">Список гиперссылок</a>
+              <a class="menu_link m-2 fs-3 text-dark text-decoration-none" href="#table">Таблица</a>
+              <a class="menu_link m-2 fs-3 text-dark text-decoration-none" href="#forma" title="Форма">Форма</a>
+            </div>
+          </div>
+          <div class="col-md"></div>
+        </div>
+		
+        <div class="row">
+          <div class="col-md"></div>
+          <div class="col-md-7 bg-info mt-4">
+            <section class="hyperlinks">
+              <div class="container">
+                <div class="hyperlinks_inner">
+                  <h2 id="hyperlinks" class="hyperlinks_title title">
+                    Список гиперссылок:
+                  </h2>
+                  <ol class="hyperlinks_list">
+				    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="http://example.com">Абсолютная гиперссылка на главную страницу сайта example.com</a></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="https://example.com">Абсолютная на главную сайта example.com в протоколе https</a></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="ftp://example.com/myfile.zip">Ссылка на файл на сервере FTP без авторизации</a></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="ftp://user:password@example.com/myfile.zip">Ссылка на файл на сервере FTP с авторизацией</a></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="https://www.youtube.com/watch?v=4kHl4FoK1Ys#content">Ссылка на фрагмент страницы некоторого сайта</a></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="#links">Ссылка на фрагмент текущей страницы</a></li>
+					<li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="http://example.com?parametr=value&size=m">Ссылка с двумя параметрами в URL</a></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3">Ссылка без href</a></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="">Ссылка с пустым href</a></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="http://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+                    <li class="hyperlinks_item"><!--<noindex>--><a class="hyperlinks_link text-dark fs-3" href="https://example.com">Запрещенная для индексации поисковиками</a><!--</noindex>--></li>
+                    <li class="hyperlinks_item"><p class="fs-3">Контекстная в тексте <a class="hyperlinks_link text-dark" href="http://htmlbook.ru/html/p">абзаца</a></p></li>
+                    <li class="hyperlinks_item fs-3"><a class="hyperlinks_link text-dark fs-3" href="image1.JPG" title="ссылка-изображение"><img class="hyperlinks_image img-fluid" id="linkImg" src="image1.jpg" alt="цветок" style="width:200px;height:150px"></a></li>
+                    <li class="hyperlinks_item fs-3">Ссылки из прямоугольных и круглых областей картинки  (HTML-тег map)<br><img class="hyperlinks_image img-fluid" id="mapImg" src="map.jpg" alt="квадрта и круг" usemap="#linkArea" style="width:300px;height:150px">
+			          <map name="linkArea">
+				        <area shape="rect" coords="10,10,140,150" alt="квадрат" href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82">
+					    <area shape="circle" coords="230,75,60" alt="круг" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3">
+				      </map></li>
+                    <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="2.html">Относительная на страницу в текущем каталоге</a></li>
+			        <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="about/3.html">Относительная на страницу в каталоге About</a></li>
+			        <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="../4.html">Относительная на страницу в каталоге уровнем выше текущего</a></li>
+			        <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="../../5.html">Относительная на страницу в каталоге двумя уровнями выше</a></li>
+			        <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="/index.html">Сокращенная на главную</a></li>
+			        <li class="hyperlinks_item"><a class="hyperlinks_link text-dark fs-3" href="/2.html">Сокращенная ссылка на внутреннюю</a></li>
+                  </ol>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-md"></div>
+        </div>
+		
+		
+        <div class="row tablee">
+          <div class="col-md"></div>
+          <div class="col-md-7 bg-info mt-4">
+            <h2 id="table" class="text-center">Таблица</h2>
+            <table class="table table-striped table-bordered">
+              <thead>
+                <tr>
+                  <th class="table-light text-wrap" scope="col">
+                    Колонка 1
+                  </th>
+                  <th class="table-light text-wrap" scope="col">
+                    Колонка 2
+                  </th>
+                  <th class="table-light text-wrap" scope="col">
+                    Колонка 3
+                  </th>
+                </tr>
+              </thead>
+			  <tbody class="table_tbody">
+                <tr class="table_tr">
+                  <td class="table_td" colspan="3">Объединенная строка</td>              
+                </tr>
+                <tr class="table_tr">
+                  <td class="table_td table-light" colspan="2">Строка</td>
+                  <td class="table_td table-light">Строка</td> 				
+                </tr>
+                <tr class="table_tr">
+                  <td class="table_td" colspan="3">Объединенная строка</td>
+                </tr>
+                <tr class="table_tr">
+                  <td class="table_td table-light">Строка</td>
+                  <td class="table_td table-light" colspan="2">Строка</td>
+                </tr>
+                <tr class="table_tr">
+                  <td class="table_td" colspan="3">Объединенная строка</td>
+                </tr>
+			    <tr class="table_tr">
+                  <td class="table_td table-light" colspan="2">Строка</td>
+                  <td class="table_td table-light">Строка</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md"></div>
+        </div>
+		
+        <div class="row contacts">
+          <div class="col-md"></div>
+          <div class="col-md-7 bg-info mt-4 d-flex justify-content-center">
+            <form class="contacts_form">
+              <h2 id="forma" class="contacts_title title text-center">Форма</h2>
+              <input class="contacts_input w-100" type="text" placeholder="Имя"/>
+              <br><br>
+              <input class="contacts_input w-100" type="email" placeholder="Email"/>
+              <p class="form_text text-center">Дата рождения:</p>
+              <input class="contacts_input w-100" type="date"/>
+              <p class="form_text text-center">Количество конечностей:</p>
+              <label><input type="radio" checked="checked" name="radio-2">0</label>
+			  <label><input type="radio" name="radio-2">1</label>
+			  <label><input type="radio" name="radio-2">2</label>
+			  <label><input type="radio" name="radio-2">3</label>
+			  <label><input type="radio" name="radio-2">4</label>
+			  <label><input type="radio" name="radio-2">5</label>
+              <p class="form_text text-center">Сверхспособности:</p>
+              <select class="form_area" name="skill[]" multiple="multiple">
+                <option value="immortality">Бессмертие</option>
+                <option value="passingthroughwalls">Прохождение сквозь стены</option>
+                <option value="levitation" selected="selected">Левитация</option>
+              </select>
+              <p class="form_text text-center">Биография:</p>
+              <textarea class="form_area w-100" name="bio">О себе</textarea>
+              <p class="form_text">С контрактом ознакомлен(а):</p>
+              <input type="checkbox" checked="checked" name="check-1"/>
+              <input class="contacts_btn" type="submit" value="Отправить"/>
+            </form>
+          </div>
+          <div class="col-md"></div>
+        </div>
+      </main>
+      <footer class="footer bg-info w-100 py-3 mt-4">
+        <div class="footer_inner">
+          <div class="footer_copy d-flex justify-content-center">
+            (c) Жмыхченко Валерий Альбертович 2022
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
