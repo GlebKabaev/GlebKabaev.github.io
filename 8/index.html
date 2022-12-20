@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="8.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
+    <script defer src="8.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/slapform"></script>
+    <script>integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+    <title>Сайт</title>
+</head>
+<body style="background-color: blue;">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2"> 
+            <button type="submit" class="btn" id="popup"  ><i class="fa fa-check" aria-hidden="true" ></i> <h5>Начать регистрацию</h5> </button>
+            <div class="popup-overlay">
+              <div class="popWindow subscribe_window">
+                <p class="subcsribe-text">Обратная связь</p>
+                <form method="POST" class="subscribe-form" autocomplete="off">
+                  <div>
+                    <input type="text" id="name-subscribe" name="name" placeholder="Имя*" required>
+                    <label for="name-subscribe"></label>
+                  </div>
+
+                  <div>
+                    <input type="email" id="email-subscribe" name="email" placeholder="Email*" required>
+                    <label for="email-subscribe"></label>
+                  </div>
+      
+                  <div class="md">
+                       <textarea placeholder="Кто я"></textarea>
+                  </div>
+      
+                  <div class="dacc">
+                    Согласие с политикой  <span>*</span><input type="checkbox"  name="consent" id="accept" required>  
+                  </div>
+                  <div class="aligncenter">
+                    <button type="submit" class="btn" id="subscribe" ><i class="fa fa-check" aria-hidden="true"></i> Отправить!</button>
+                  </div>
+                  <div class="req-fields"><sup>*</sup> Поля, обязательные для заполнения</div>
+                </form>
+                
+                <div class="close-btn">&times;</div>
+              </div>
+       
+              <div class="popWindow thank_you_window">
+                <p class="thank_you_title">Поздравляем!</p>
+                <p class="thank_you_body">Проверьте почту!</p>
+                <div class="close-btn">&times;</div>
+              </div>
+       
+            </div>
+       
+          </div>
+        </div>
+      </div>
+      
+</body>
+</html>
