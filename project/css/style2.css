@@ -1,0 +1,45 @@
+.FAQ_block{
+    margin: 0 auto;
+}
+.FAQ_block{
+    width: 50%;
+    margin: 0 auto;
+    right: 10px;
+
+
+   /* text-align: center;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 16px;
+    color: #050c33;
+    margin-bottom: 5px;
+    line-height: 1.37;
+    text-decoration: none;
+    display: inline-block;*/
+}
+.FAQ_p{
+    color: #505570;
+    line-height: 1.37;
+    font-size: 16px;
+    font-weight: 500;
+}
+.FAQ_test{
+    color: #505570;
+    line-height: 1.37;
+    font-size: 16px;
+    font-weight: 500;
+}
+.active {
+    display: block;
+    overflow: initial;
+}
+.disable{
+    display: none;
+}
+.Q{
+    width: auto;
+    height: auto;
+}
+.hehe{
+    color: white;
+}
